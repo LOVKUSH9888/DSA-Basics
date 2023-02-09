@@ -15,7 +15,7 @@ int main()
     }
     
 
-    
+
     int largest = INT_MIN; // Initialize largest with the smallest integer value possible
 
     // Loop to find the largest element in the array
@@ -28,6 +28,24 @@ int main()
     }
     
     cout << largest << endl; // Output the largest element
+    
+    return 0;
+}
+
+
+
+//If we need to find the smallest element
+
+
+int smallest = INT_MAX;
+
+for(int i = 0; i<n; i++){
+        if(a[i] <>> largest){ 
+            smallest = a[i]; 
+        }
+    }
+    
+    cout << smallest<< endl; // Output the smallest element
     
     return 0;
 }
