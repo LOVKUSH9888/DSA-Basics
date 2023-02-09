@@ -23,3 +23,18 @@ int main()
     
     return 0;
 }
+
+
+
+//We can aslo swap these numbers by using BITWISE OPERATOR = XOR
+
+
+/*This is XOR logic*/
+a = a^b;
+b = a^b;
+a = a^b;
+
+
+
+// STL has swap function
+swap(a, b);
