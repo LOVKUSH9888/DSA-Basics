@@ -38,3 +38,6 @@ a = a^b;
 
 // STL has swap function
 swap(a, b);
+
+
+//Use the STL swap function for small code
