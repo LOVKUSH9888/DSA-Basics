@@ -1,4 +1,5 @@
 //We donot need for loop for taking input from the user
+//'\0' == this is null char
 #include <iostream>
 using namespace std;
 
