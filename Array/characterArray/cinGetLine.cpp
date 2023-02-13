@@ -18,6 +18,10 @@ int main()
     char name[100];
     cout<<"ENter Your Name";
 
+//Synatx 
+//cin.getline(string name, length, delimiter);
+//cin.getline(name, 100, '0'); //Here is we give Hello = then output == Hell only
+
     cin.getline(name, 100); //Here we used
 
     length(name);
