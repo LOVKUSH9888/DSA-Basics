@@ -1,3 +1,5 @@
+//String is basically a class
+
 #include <iostream>
 #include<vector>
 #include<algorithm>
@@ -78,6 +80,20 @@ int main()
 
     //WE have another function == find function  === this will return the indes wjere elemt is present
     cout<<s4.find("abc")<<endl;
+
+
+    //function = to_string
+    int  a  = 123;
+    string st = to_string(a);
+    cout<<s6<<endl;
+
+
+    //Function name = atoi    ///It will take string & return integer 
+    a = atoi(s6.c_str());
+    cout<<a<<endl;
+
+
+    //Function name = push_back   === for inserting elemets in code
 
     return 0;
 }
