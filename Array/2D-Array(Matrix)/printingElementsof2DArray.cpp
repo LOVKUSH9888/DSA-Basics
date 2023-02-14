@@ -49,4 +49,7 @@ int main()
 
 
 
+//Saving in memor = Row major & Column major
 
+//Formula for calculating the index = a[i][j] = i*column+j == Row Major
+//Thats why the value of column is mandatory
