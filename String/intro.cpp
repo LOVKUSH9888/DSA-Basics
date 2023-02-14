@@ -1,6 +1,7 @@
 #include <iostream>
 #include<vector>
 #include<algorithm>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -49,7 +50,34 @@ int main()
 
     ///also we can add the string
      string s4 = s + s3 + "lovkush Yadav";
+
+     /// Using += operator
+     string s4 += s + s3 + "lovkush Yadav";
     cout<<s4<<endl;
+
+
+
+    //size & length of string
+
+    /// Here s.size & s.lenth is same
+    cout<<s.size()<<endl;
+    cout<<s.length()<<endl;
+
+    //We have another function named - substring == substr
+    cout<<s4.substr(3)<<endl;   //This substring will give all after the given index
+    cout<<s4.substr(3, 3 )<<endl;   //This substring will give all after the given index
+    ///in abobe the 2nd 3 is length
+
+    //further we can store this is another string & print
+
+    string s5 = s4.substr(3, 5)<<endl;
+    cout<<s5<<endl;
+    
+
+
+
+    //WE have another function == find function  === this will return the indes wjere elemt is present
+    cout<<s4.find("abc")<<endl;
 
     return 0;
 }
