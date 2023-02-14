@@ -67,31 +67,43 @@ int main()
 
 
 //Taking input from the user
+#include <iostream>
+using namespace std;
 
-#include<iostream>
-using namespace std; 
-main( ) 
-{  
-      int  s[2][2];   //rows = 2 & column = 2
-      int  i, j;
-      cout<<"\n2D Array Input:\n";
-	  for(i=0;i<2;i++)
-	  {
-	  	for(j=0;j<2;j++)
-	  	{
-	  		cout<<"\ns["<<i<<"]["<<j<<"]=  ";
-	  		cin>>s[i][j];   //Taking input
-		}
-	  } 
-	  
-	  cout<<"\nThe 2-D Array is:\n";
-      for(i=0;i<2;i++)
-	  {
-	  	for(j=0;j<2;j++)
-	  	{
-	  		cout<<"\t"<<s[i][j];  //Printing values 
-		}
-		cout<<endl;
-	  } 
+int main()
+{
+    // declare a 2D array of size 100x100
+    int array[100][100];
+    int m, n;
+
+    // take input for the number of rows (m) and columns (n) of the 2D array
+    cin>>m>>n;
+
+    // loop to take input for each element of the 2D array
+
+    //Taking input row wise
+
+    for(int i=0; i<m; i++){
+        for(int j=0; j<n; j++){
+            cin>>array[i][j];
+        }
+    }
+    
+    //Printing row wise
+
+    for(int i=0; i<m; i++){
+        for(int j=0; j<n; j++){
+            cout<<array[i][j];
+        }
+        cout<<endl; //This will move to new row
+    }
+
+    // return 0 to indicate successful termination of the program
+    return 0;
 }
 
+//input = 2 3 
+//input = 1 2 3 4 5 6
+
+//out put = 123
+//out put = 456
