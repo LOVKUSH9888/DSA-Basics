@@ -1,5 +1,7 @@
 //Sorting = Either assending order / Decending Order====Generally we use Assending Order
 //To make our searching faster
+//Time Complexity = O(n^2)
+//Space COmplexity = O(1)
 
 #include<bits/stdc++.h>
 #include <iostream>
@@ -61,6 +63,7 @@ int main()
 
 
 ///Correct COde
+
 #include<bits/stdc++.h>
 #include <iostream>
 using namespace std;
@@ -101,6 +104,45 @@ int main() {
     for(int i=0; i<n; i++){
         cout<<a[i]<<endl;
     }
+
+    return 0;
+}
+
+
+////Correct code
+
+#include <iostream>
+using namespace std;
+
+void selectionSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) { // loop through the entire array
+        int min_idx = i; // assume the current element is the minimum
+
+        // loop through the rest of the array to find the minimum element
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[min_idx]) {
+                min_idx = j;
+            }
+        }
+
+        // swap the current element with the minimum element
+        if (min_idx != i) {
+            swap(arr[i], arr[min_idx]);
+        }
+    }
+}
+
+int main() {
+    int arr[] = {64, 25, 12, 22, 11};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    selectionSort(arr, n);
+
+    cout << "Sorted array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 
     return 0;
 }
