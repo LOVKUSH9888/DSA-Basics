@@ -3,6 +3,8 @@
 //Time Complexity = O(n^2)
 //Space COmplexity = O(1)
 
+///THis loop works by taking minimun 1st element and then comparing with rest of elements
+
 #include<bits/stdc++.h>
 #include <iostream>
 using namespace std;
