@@ -1,2 +1,3 @@
 # DSA-Basics
-Learning &amp; Solvinf Easy problems on DSA
+Learning & applying ; 
+Solving Easy problems on DSA
