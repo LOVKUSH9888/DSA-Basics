@@ -1,5 +1,6 @@
 //This loop works by comparing adjacent
 
+//This is optimized already 
 
 #include <iostream>
 using namespace std;
@@ -65,3 +66,13 @@ int main() {
     for (int v : arr) cout << v << " ";
     cout << endl;
 }
+
+
+
+
+////Optimized Bubble sort 
+//Because when array is sorted or unsorted it  is taking N^2
+//We want ot achieve = n steps
+
+By using int flag = 0
+
