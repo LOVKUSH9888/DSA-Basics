@@ -31,3 +31,39 @@ int main(void)
 		: cout << "Element is present at index " << result;
 	return 0;
 }
+
+
+
+
+
+//Simple Code
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+// Linear search function
+int linearSearch(vector<int>& arr, int target) {
+    int n = arr.size();
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == target) {
+            return i; // element found at index i
+        }
+    }
+    return -1; // element not found
+}
+
+int main() {
+    // Test the linear search function
+    vector<int> arr = {5, 2, 4, 6, 1, 3};
+    int target = 6;
+    int index = linearSearch(arr, target);
+    if (index == -1) {
+        cout << "Element not found" << endl;
+    } else {
+        cout << "Element found at index " << index << endl;
+    }
+    return 0;
+}
+
