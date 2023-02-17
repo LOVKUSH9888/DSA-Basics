@@ -2,6 +2,8 @@
 /// Suppose we have array = {10, 20, 3, 4, 1, 0}
 // Key = 20 (which we need to find) - 20 is present at index = 1 Similarly if we need to find the 30 = then == Key == is not present
 
+///Time complexity = Unsorted = n steps && Sorted  = n steps
+
 // C++ code to linearly search x in arr[]. If x
 // is present then return its location, otherwise
 // return -1
