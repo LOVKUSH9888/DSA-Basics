@@ -1,3 +1,5 @@
+//We can use = arrays is Unsorted
+
 // Task = Search for a given key/Value in Array
 /// Suppose we have array = {10, 20, 3, 4, 1, 0}
 // Key = 20 (which we need to find) - 20 is present at index = 1 Similarly if we need to find the 30 = then == Key == is not present
@@ -7,6 +9,53 @@
 // C++ code to linearly search x in arr[]. If x
 // is present then return its location, otherwise
 // return -1
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int linearSearch(int a[],int n,int key){
+
+   for(int i=0;i<n;i++){
+
+    if(a[i] == key){
+        return i;
+    }
+   }
+
+   return -1;
+
+}
+
+int main(){
+
+   int n;
+   cin>>n;
+   int a[n];
+   for(int i=0;i<n;i++){
+    cin>>a[i];
+   }
+
+   cout<<"enter key"<<endl;
+   int key;
+   cin>>key;
+
+   int pos = linearSearch(a,n,key);
+   if(pos == -1){
+    cout<<"key not found"<<endl;
+   }else{
+       cout<<"key found at index "<<pos<<endl;
+   }
+
+   return 0;
+}
+
+
+
+
+
+
+
+
 
 #include <iostream>
 using namespace std;
