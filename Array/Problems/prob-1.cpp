@@ -4,23 +4,37 @@
 //Time complexity = 2 * (N*M)
 //Spacecomplexity = O(1)
 
-void setZeroes(vector<vector<int> > &matrix) {
+void setZeroes(vector<vector<int> >& matrix) {
     int col0 = 1, rows = matrix.size(), cols = matrix[0].size();
 
+    // Step 1: Scan the first column to check if it needs to be zeroed out later
     for (int i = 0; i < rows; i++) {
-        if (matrix[i][0] == 0) col0 = 0;
-        for (int j = 1; j < cols; j++)
-            if (matrix[i][j] == 0)
+        if (matrix[i][0] == 0) {
+            col0 = 0;
+        }
+        
+        // Step 2: Scan the rest of the row and the corresponding column to mark with a zero
+        for (int j = 1; j < cols; j++) {
+            if (matrix[i][j] == 0) {
                 matrix[i][0] = matrix[0][j] = 0;
+            }
+        }
     }
 
+    // Step 3: Traverse the matrix from bottom to top and right to left to mark with zero
     for (int i = rows - 1; i >= 0; i--) {
-        for (int j = cols - 1; j >= 1; j--)
-            if (matrix[i][0] == 0 || matrix[0][j] == 0)
+        for (int j = cols - 1; j >= 1; j--) {
+            if (matrix[i][0] == 0 || matrix[0][j] == 0) {
                 matrix[i][j] = 0;
-        if (col0 == 0) matrix[i][0] = 0;
+            }
+        }
+        // Step 4: Check if first column needs to be zeroed out
+        if (col0 == 0) {
+            matrix[i][0] = 0;
+        }
     }
 }
+
 
 
 
@@ -60,35 +74,33 @@ void setZeroes(vector<vector<int> > &matrix) {
 
 
     //3rd approach 
-    class Solution {
+class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
         int R = matrix.size();
         int C = matrix[0].size();
-        set<int> rows ;
-        set<int> cols ;
-        // We mark the rows and columns that are to be made zero
-        for (int i = 0; i < R; i++) 
-        {
-          for (int j = 0; j < C; j++) 
-          {
-            if (matrix[i][j] == 0) 
-            {
-                rows.insert(i);
-                cols.insert(j);
+
+        // Create sets to store the rows and columns that need to be zeroed out
+        set<int> rows;
+        set<int> cols;
+
+        // Iterate through the matrix to identify which rows and columns need to be zeroed out
+        for (int i = 0; i < R; i++) {
+            for (int j = 0; j < C; j++) {
+                if (matrix[i][j] == 0) {
+                    rows.insert(i);
+                    cols.insert(j);
+                }
             }
-          }
         }
-        // Iterate over the array once again and using the rows and cols sets, update the elements.
-        for (int i = 0; i < R; i++) 
-        {
-          for (int j = 0; j < C; j++) 
-          {
-            if (rows.count(i) || cols.count(j)) 
-            {
-              matrix[i][j] = 0;
+
+        // Update the matrix by setting all elements in the identified rows and columns to zero
+        for (int i = 0; i < R; i++) {
+            for (int j = 0; j < C; j++) {
+                if (rows.count(i) || cols.count(j)) {
+                    matrix[i][j] = 0;
+                }
             }
-          }
         }
     }
 };
