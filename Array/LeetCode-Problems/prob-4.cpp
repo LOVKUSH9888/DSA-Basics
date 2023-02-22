@@ -36,7 +36,7 @@ public:
 };
 
 
-///1st solution
+///1st solution : By the code skool
 
 // This class provides a solution to find the maximum sum of any contiguous subarray in a given vector of integers.
 class Solution {
