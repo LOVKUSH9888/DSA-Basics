@@ -33,6 +33,57 @@ private:
 };
 
 
+//2nd method o solving this 
+
+    void sortColors(vector<int>& nums) {
+        
+        // initialize variables:
+        
+        ///Consider three pointers low = 0, mid = 0, high = nums.size() - 1
+
+        int low = 0, mid = 0, high = nums.size() - 1;
+        
+        /*The algorithm ensures that at any point, every element before low is 0, every element after high is 2, every element in between are either 0, 1 or 2 i.e. unprocessed.*/
+        
+        // logic:
+
+        ///We'll use mid pointer to traverse and check the array elements i.e. while(mid <= high). Three cases are possible:
+        while(mid <= high)
+        {
+            switch(nums[mid])
+            {
+                case 0: swap(nums[low++], nums[mid++]); break;
+                
+                case 1: mid++; break;
+                
+                case 2: swap(nums[mid], nums[high--]); break;
+            }
+        }
+    }
+
+
+
+    //3rd great approach
+    class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int n = nums.size();
+        int low = 0, mid = 0, high = n - 1;
+        while (mid <= high) {
+            if (nums[mid] == 0) {
+                swap(nums[low], nums[mid]);
+                low++;
+                mid++;
+            } else if (nums[mid] == 1) {
+                mid++;
+            } else if (nums[mid] == 2) {
+                swap(nums[high], nums[mid]);
+                high--;
+            }    
+        }
+    }
+};
+
 
 
 
