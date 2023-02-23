@@ -82,3 +82,39 @@ public:
         return maxProfit;
     }
 };
+
+///
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        if (prices.empty()) return 0;
+        int buy = prices[0], profit = 0;
+        for (int i=1; i<prices.size(); i++) {
+            if (prices[i] > buy) profit = max(prices[i]-buy, profit);
+            else                 buy    = prices[i];
+        }
+        return profit;
+    }
+};
+
+
+//Another
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        
+        int length = prices.size();
+        int profit = 0;
+        if(length == 0){
+            return profit;
+        }
+        
+        int minPrice = prices[0];
+        for(int i = 1;i < length;i++){
+            profit = max(profit,prices[i] - minPrice);
+            minPrice = min(minPrice,prices[i]);
+            
+        }
+        return profit;
+    }
+};
