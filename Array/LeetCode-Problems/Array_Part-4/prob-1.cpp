@@ -4,7 +4,7 @@ Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].*/
 
 
-//brute Force Approach = Two pointer approach
+//brute Force Approach = Two pointer approach = O(N^2) & O(1)
 
 class Solution {
 public:
@@ -42,3 +42,4 @@ public:
         return ans;
     }
 };
+
