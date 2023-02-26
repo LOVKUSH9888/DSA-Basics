@@ -6,7 +6,7 @@
 // Creating a class :
 
 #include <iostream>
-                                                                                                                            using namespace std;
+                    // We will #include that class created file here                                                                                                         using namespace std;
 
 // Syntax of creating a class
 
@@ -52,3 +52,10 @@ int main()
 
 /// OOPS has --- Access Modifiers
 // 3. Types = PUBLIC, PRIVATE & PROTECTED
+
+
+//iSOlaTION OF lOGIC - Always try to create a new sub class file seperately
+
+
+
+//getter & setter Function
