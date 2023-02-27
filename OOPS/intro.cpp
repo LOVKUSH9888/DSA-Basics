@@ -59,3 +59,29 @@ int main()
 
 
 //getter & setter Function
+#include<iostream>
+using namespace std;
+class SomeClass
+{
+    private:
+        int a;     
+    public:
+        void set(int x)
+        {
+            a =x;
+        }
+        int get()
+        {
+            return a;
+        }
+};
+int main()
+{
+    SomeClass obj;
+    obj.set(10); 
+    cout<<obj.get();
+    return 0;
+}
+
+
+//o/p: 10
