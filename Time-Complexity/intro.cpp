@@ -3,7 +3,7 @@
 
 /// 3(Three) Cases :
 
-// 1. Best Case  == Element is present at 1st Index
+// 1. Best Case  == Element is present at 1st Index /Array is sorted
 
 // 2. Average CAse
 
@@ -14,3 +14,5 @@
 // 2.We only focus on Higest Power
 
 /// We will always find our time complexity for Worst Case
+
+https://www.codingninjas.com/codestudio/library/practice-questions-on-time-complexity-analysis-in-c
