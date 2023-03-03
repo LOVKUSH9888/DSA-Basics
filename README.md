@@ -1,5 +1,5 @@
 $${\color{red}DSA - Topics = Covered}$$
-1. Array = Char. Array + 2D array (Matrix) + Vectors
+1. Array = Char. Array + 2D array (Matrix) + Vectors + Two-Pointer + Sliding Window
 2. String
 2. Sorting Algo = Sort (Selection, Bubble, Merge, Quick) & Search(Linear, Binary)
 3. Time Complexity of Sorting's
