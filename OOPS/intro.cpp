@@ -1,7 +1,7 @@
 // OOPS Goal =  aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming.
 // OOP is to bind together the data and the functions
 
-1. CLASS = Main template == BluePrint == = user defined dataType 2. Object = Copied version of class == make the copy & filled data == Real World
+// 1. CLASS = Main template == BluePrint == = user defined dataType 2. Object = Copied version of class == make the copy & filled data == Real World
 
 // Creating a class :
 
