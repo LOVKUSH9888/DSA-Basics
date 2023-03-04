@@ -20,7 +20,7 @@ for (int windowEnd = 0; windowEnd < arr.size(); windowEnd++)
     }
 }
 
-// Using Two-Pointer Approach ==This implementation uses two pointers (windowStart and windowEnd)
+// 2.Using Two-Pointer Approach ==This implementation uses two pointers (windowStart and windowEnd)
 int maxSum = INT_MIN;
 int windowSum = 0;
 int windowStart = 0;
@@ -42,7 +42,7 @@ for (int windowEnd = 0; windowEnd < arr.size(); windowEnd++)
     }
 }
 
-// Using Deque (double-ended queue):
+//3.Using Deque (double-ended queue):
 /// The push_back operation adds new elements to the right end of the window,
 ///the pop_front operation removes elements from the left end of the window.
 
