@@ -51,7 +51,7 @@ Here are some notes for beginners in C++ who want to learn the two pointer appro
 7.Debugging: Debugging is an important step to ensure that your two pointer approach is correct. Use print statements or debuggers to check the values of the pointers and the updated solution at each step of the traversal.*/
 
 
-//Example of sliding wimdow:-
+//Example of sliding window:-
 int left = 0, right = 0;
 int sum = 0;
 int ans = INT_MAX;
