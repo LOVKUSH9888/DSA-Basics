@@ -7,4 +7,4 @@
 7) Stack
 8) Queue
 9) Hashing
-10) Recursion -> Only Basics
+10) Recursion -> Only Basics.
