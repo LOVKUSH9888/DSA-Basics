@@ -1,3 +1,4 @@
+
 //Find the maximum element in an array: Given an array of integers, find the maximum element in the array.
 #include <iostream>
 using namespace std;
@@ -72,6 +73,21 @@ int main() {
     return 0;
 }
 
+///Conscise way of the above code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int array[] = {1, 2, 3, 4, 5, 6};
+    int sum = 0;
+    for (int i = 0; i < 6; i++) {
+        sum += array[i];   //its a compound assignment operator
+        ///sum = sum + array[i]
+    }
+    cout << "Sum of array elements: " << sum << endl;
+    return 0;
+}
+
 
 //4.Find the second largest element in an array: Given an array of integers, find the second largest element in the array.
 
@@ -96,7 +112,7 @@ int main() {
     int n = sizeof(arr)/sizeof(arr[0]);
     int secondLargest = findSecondLargest(arr, n);
     cout << "Second largest element in the array: " << secondLargest << endl;
-    return 0
+    return 0;
 }
 
 //5.Remove duplicates from an array: Given an array of integers, remove any duplicates from the array and return the updated array.
