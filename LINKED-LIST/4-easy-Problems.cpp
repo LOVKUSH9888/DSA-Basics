@@ -22,6 +22,8 @@ int main() {
     return 0;
 }
 
+//revision
+
 //2.Delete the first occurrence of a given element in a linked list:
 #include <iostream>
 using namespace std;
