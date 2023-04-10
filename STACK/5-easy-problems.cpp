@@ -1,7 +1,9 @@
 //1.Valid Parentheses: Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 bool isValid(string s) {
     stack<char> stk;
-    for (char c : s) {
+    //This is a range-based for loop in C++, also known as a "foreach" loop. 
+    //It is used to iterate over a range of elements in a container, such as a string, array, or vector.
+    for (char c : s) {    //c" refers to the current character being processed in the string "s"
         if (c == '(' || c == '[' || c == '{') {
             stk.push(c);
         } else {
