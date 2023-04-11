@@ -21,7 +21,7 @@ bool isValid(string s) {
 //2.Reverse a String using a Stack: Given a string, reverse it using a stack.
 string reverseString(string s) {
     stack<char> stk;
-    for (char c : s) {
+    for (char c : s) {   //This loopp can be used with the Iterator loop for (auto it : v) {
         stk.push(c);
     }
     string result = "";
@@ -65,7 +65,7 @@ private:
 //4.Next Greater Element: Given an array, find the next greater element for each element in the array.
 vector<int> nextGreaterElement(vector<int>& nums) {
     int n = nums.size();
-    vector<int> result(n, -1);
+    vector<int> result(n, -1);  //its the method of vector intialization ///vector obj name = result, no of elements = n, each element is intialize with -1
     stack<int> stk;
     for (int i = 0; i < n; i++) {
         while (!stk.empty() && nums[stk.top()] < nums[i]) {
