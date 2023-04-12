@@ -6,7 +6,11 @@ int binarySearch(int arr[], int n, int x) {
     while (low <= high) {
         int mid = (low + high) / 2;
         if (arr[mid] == x) {
-            return mid;
+            if (mid == 0 || arr[mid - 1] != x) {
+                return mid;
+            } else {
+                high = mid - 1;
+            }
         } else if (arr[mid] < x) {
             low = mid + 1;
         } else {
@@ -17,10 +21,10 @@ int binarySearch(int arr[], int n, int x) {
 }
 
 int main() {
-    int arr[] = {1, 3, 5, 7, 9};
+    int arr[] = {1, 2, 2, 3, 3, 3, 4, 4, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int x = 5;
+    int x = 3;
     int index = binarySearch(arr, n, x);
-    cout << "Index of " << x << " is: " << index << endl;
+    cout << "Index of first occurrence of " << x << " is: " << index << endl;
     return 0;
 }
