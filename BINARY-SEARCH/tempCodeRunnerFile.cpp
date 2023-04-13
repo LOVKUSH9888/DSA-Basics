@@ -1,30 +1,29 @@
 #include <iostream>
 using namespace std;
 
-int binarySearch(int arr[], int n, int x) {
-    int low = 0, high = n - 1;
-    while (low <= high) {
-        int mid = (low + high) / 2;
-        if (arr[mid] == x) {
-            if (mid == 0 || arr[mid - 1] != x) {
-                return mid;
-            } else {
-                high = mid - 1;
+    int findMin(int arr[], int n)
+    {
+        int low = 0, high = n - 1;
+        while (low <= high)
+        {
+            int mid = (low + high) / 2;
+            if (arr[mid] < arr[high])
+            {
+                high = mid;
             }
-        } else if (arr[mid] < x) {
-            low = mid + 1;
-        } else {
-            high = mid - 1;
+            else
+            {
+                low = mid + 1;
+            }
         }
+        return low;
     }
-    return -1;
-}
 
-int main() {
-    int arr[] = {1, 2, 2, 3, 3, 3, 4, 4, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int x = 3;
-    int index = binarySearch(arr, n, x);
-    cout << "Index of first occurrence of " << x << " is: " << index << endl;
-    return 0;
-}
+    int main()
+    {
+        int arr[] = {5, 6, 1, 2, 3, 4};
+        int n = sizeof(arr) / sizeof(arr[0]);
+        int index = findMin(arr, n);
+        cout << "Index of smallest element is: " << index << endl;
+        return 0;
+    }

@@ -64,7 +64,7 @@ int binarySearch(int arr[], int n, int x)
             {
                 high = mid - 1;
             }
-        }
+        }  
         else if (arr[mid] < x)
         {
             low = mid + 1;
@@ -131,7 +131,7 @@ Input:
     arr[] = {5, 6, 1, 2, 3, 4} Output : 2
 
 #include <iostream>
-        using namespace std;
+using namespace std;
 
     int findMin(int arr[], int n)
     {
