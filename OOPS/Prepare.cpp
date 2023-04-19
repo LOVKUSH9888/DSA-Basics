@@ -1,14 +1,6 @@
 // Why oop ?
-So before the OOP we have the procedure oriented programming - Which was conventional programming paradigm that uses the high level languages - c, cocol, fortran - Pragram divided into the various tasks - Many functions##Issues : - -Data was globally available so it was be access by the any of the function
-
-                                                                                                                                                                                                                                      // OOP:
-                                                                                                                                                                                                                                      -
-                                                                                                                                                                                                                                      Our main function is on the DATA not on the function - So we bind the DATA to the function using it - In this the Programs are divided into = DATA + FUNCTION
-
-                                                                                                                                                                                                                                                                                                                                                                                    // #Class :
-                                                                                                                                                                                                                                                                                                                                                                                    //// A class is a blueprint for creating objects that encapsulate data and behavior.
-
-                                                                                                                                                                                                                                                                                                                                                                                    class MyClass
+/*So before the OOP we have the procedure oriented programming - Which was conventional programming paradigm that uses the high level languages - c, cocol, fortran - Pragram divided into the various tasks - Many functions##Issues : - -Data was globally available so it was be access by the any of the function*/
+class MyClass
 {
     // member variables and functions
 };
@@ -55,61 +47,64 @@ MyClass::~MyClass()
     // destructor definition
 }
 
+// #Member Functions:
+Member functions are functions that are defined inside a class and operate on its member variables.They can be either public, private, or protected.
 
-//#Member Functions:
-Member functions are functions that are defined inside a class and operate on its member variables.
-They can be either public, private, or protected.
-
-class MyClass {
-  public:
+class MyClass
+{
+public:
     void myFunction(); // member function declaration
 };
 
-void MyClass::myFunction() {
-  // member function definition
+void MyClass::myFunction()
+{
+    // member function definition
 }
 
-
-//#Inheritance:
+// #Inheritance:
 /*Inheritance is a mechanism that allows a new class to be based on an existing class.
 The new class inherits the properties of the existing class, and can override or extend its behavior.*/
 
-class MyBaseClass {
-  // base class members
+class MyBaseClass
+{
+    // base class members
 };
 
-class MyDerivedClass : public MyBaseClass {
-  // derived class members
+class MyDerivedClass : public MyBaseClass
+{
+    // derived class members
 };
 
-
-//#Polymorphism : 
+// #Polymorphism :
 /*Polymorphism is the ability of objects to take on many forms.
 It is achieved through virtual functions and function overloading.*/
 
-class MyBaseClass {
-  public:
+class MyBaseClass
+{
+public:
     virtual void myFunction(); // virtual function declaration
 };
 
-class MyDerivedClass : public MyBaseClass {
-  public:
+class MyDerivedClass : public MyBaseClass
+{
+public:
     void myFunction(); // override the virtual function
 };
 
-
-//# function overloading:
-class MyClass {
-  public:
-    void myFunction(int arg1); // function declaration
+// # function overloading:
+class MyClass
+{
+public:
+    void myFunction(int arg1);           // function declaration
     void myFunction(int arg1, int arg2); // function overloading
 };
 
-void MyClass::myFunction(int arg1) {
-  // function definition
+void MyClass::myFunction(int arg1)
+{
+    // function definition
 }
 
-void MyClass::myFunction(int arg1, int arg2) {
-  // function definition
+void MyClass::myFunction(int arg1, int arg2)
+{
+    // function definition
 }
-
