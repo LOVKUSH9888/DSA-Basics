@@ -9,6 +9,6 @@
 9) Hashing
 10) Recursion -> Only Basics.
 
-//Revison-3.7.23
+//Revision-3.7.23
 
-// Revision - Let fron the LBL solution interview
+// Revision - Let from the LBL solution interview
