@@ -1,18 +1,12 @@
-//1 st = Iterative approach
-function maxNum(arr) {
-    let max = arr[0]
+function secLar(arr, arr_size) {
 
-    //using for loop 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i]
-        } 
+    arr.sort((a,b) => a-b);
 
-        
-    }
-    return max;
+    return arr[1]
+    
 }
 
-//driver code
-let arr = [1, 6, 9, 8, 15, 25, 30]
-console.log(maxNum(arr));
+const arr = [12, 35, 1 ,10 , 34 ,1];
+const n = arr.length;
+
+console.log(secLar(arr, n))
